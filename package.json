@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "This package let you integrate your editor with a Server Language Protocol while using electron backend.",
   "main": "index.js",
+  "typings": "./src/typings",
   "scripts": {
-    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register --reporter spec test/test.ts",
+    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register --reporter spec **/*spec.ts",
+    "mocha": "mocha",
     "start": "tsc -w"
   },
   "keywords": [
@@ -19,13 +21,18 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.1.5",
+    "@types/chai-as-promised": "^7.1.0",
     "@types/electron": "^1.6.10",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.11.2",
     "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "electron": "^3.0.2",
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "json-rpc": "^0.3.0"
   }
 }

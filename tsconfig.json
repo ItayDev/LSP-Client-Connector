@@ -13,7 +13,7 @@
           "chai"
       ],
       "typeRoots": [
-          "./node_modules/@types"
+        "./node_modules/@types"
       ],
       "lib": [
         "es2016",
@@ -22,7 +22,7 @@
       "outDir": "lib",
       "strict": true,
       "noImplicitReturns": true,
-      "noUnusedLocals": true
+      "noUnusedLocals": true,
     },
     "include": [
       "src"
